@@ -15,3 +15,15 @@ a {
 a:hover {
   color: brown;
 }
+
+#cardBack {
+  margin-bottom: 100px;
+}
+
+#cardFront {
+  margin-top: 100px;
+}
+
+img {
+  margin: 3em;
+}
