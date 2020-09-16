@@ -1,0 +1,17 @@
+* {
+  text-align: center;
+  color: antiquewhite;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+}
