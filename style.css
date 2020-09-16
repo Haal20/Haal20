@@ -34,3 +34,19 @@ footer {
   bottom: 0px;
   width: 100%;
 }
+
+#almaImg {
+  float: right;
+  padding-right: 100px;
+}
+
+.floatClear {
+  clear: both;
+}
+
+#quote {
+  padding-top: 100px;
+  padding-left: 200px;
+  font-size: 2.5em;
+  width: 500px;
+}
