@@ -11,6 +11,100 @@
     ></script>
   </head>
   <body>
+    <!--Header börjar-->
+    <header id="mainHeader">
+      <a href="index.html"><h1>ALMAs</h1></a>
+      <nav>
+        <!--Flexbox som navigation-->
+        <div class="navContainer">
+          <div class="all">
+            <a href="index.html">ALL</a>
+          </div>
+          <div class="education">
+            <a href="edu.html">EDUCATION</a>
+          </div>
+          <div class="experience">
+            <a href="exp.html">EXPERIENCE</a>
+          </div>
+          <div class="contact"><a href="contact.html">CONTACT</a></div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Body börjar-->
+    <div class="eduContainer">
+      <h2 class="contactMe">Don't be shy, say hi.</h2>
+      <p>
+        <i class="fab fa-facebook-f"></i> Facebook |
+        <a href="https://www.facebook.com/Almster.The.Hamster" target="_blank">
+          Link to facebook</a
+        >
+        <br /><br />
+        <i class="fas fa-at"></i> Email |
+        <a href="mailto:alma-harlin@hotmail.com"> alma-harlin@hotmail.com</a>
+        <br /><br />
+        <i class="fas fa-phone-alt"></i>
+        Phone | (+46)739-71 43 37
+        <br /><br />
+        <i class="fab fa-github"></i> GitHub |
+        <a href="https://github.com/Haal20" target="_blank">Link to GitHub</a>
+        <br /><br />
+        <i class="fab fa-linkedin"></i> LinkedIn |
+        <a
+          href="https://www.linkedin.com/in/alma-h%C3%A4rlin-93b36116a/"
+          target="_blank"
+        >
+          Link to LinkedIn</a
+        >
+      </p>
+      <h2 class="contactMe">
+        Or use the form <i class="fas fa-arrow-down"></i>
+      </h2>
+
+      <!--CONTACT FORM-->
+      <h3>Contact Form</h3>
+
+      <div class="form">
+        <form action="/action_page.php">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <!--CONTACT FORM-->
+    </div>
+
+    <!--Footer börjar-->
+    <footer id="mainFooter">
+      <a href="index.html"><i class="fas fa-arrow-up"></i>Back to Top</a>
+      <p>
+        Alma Härlin | Tomtebostigen 10C, 352 46 Växjö |
+        <i class="fas fa-phone-alt"></i> (+46)739-71 43 37 |
+        <a href="mailto:alma-harlin@hotmail.com"
+          ><i class="fas fa-at"></i> alma-harlin@hotmail.com</a
+        >
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
