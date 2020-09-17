@@ -11,70 +11,94 @@
     ></script>
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        ><img src="images/header.jpg" alt="Bild på Alma Härlin..." width="30%"
-      /></a>
+    <!--Header börjar-->
+    <header id="mainHeader">
+      <a href="index.html"><h1>ALMAs</h1></a>
       <nav>
-        <a href="index.html">ALL</a> | <a href="edu.html">EDUCATION</a> |
-        <a href="exp.html">EXPERIENCE</a> | <a href="contact.html">CONTACT</a>
+        <!--Flexbox som navigation-->
+        <div class="navContainer">
+          <div class="all">
+            <a href="index.html">ALL</a>
+          </div>
+          <div class="education">
+            <a href="edu.html">EDUCATION</a>
+          </div>
+          <div class="experience">
+            <a href="exp.html">EXPERIENCE</a>
+          </div>
+          <div class="contact"><a href="contact.html">CONTACT</a></div>
+        </div>
       </nav>
     </header>
 
-    <div>
-      <ul>
-        <li>
-          <h2>Espressohouse Education</h2>
-          <p>Kalmar, Espressohouse</p>
-          <i class="far fa-calendar-alt"></i> 2019
-          <p>
-            The training provides good knowledge in hygiene management, customer
-            service and coffee production in a café environment.
-          </p>
-        </li>
-        <li>
-          <h2>Japansk Språkskola</h2>
-          <p>ARC Academy Osaka</p>
-          <i class="far fa-calendar-alt"></i> April 2017 - April 2018
-          <p>Japanese language school in Osaka Japan.</p>
-        </li>
-        <li>
-          <h2>Art & Art Education and English, generell/baskurs</h2>
-          <p>Linnéuniversitetet</p>
-          <i class="far fa-calendar-alt"></i> August 2016 - Juni
-          <p>
-            An in-depth course in art studied parallel with a course that
-            includes three major parts of the English language: <br />
-            Grammar and Vocabulary <br />
-            Linguistics and History <br />
-            Poetry, Narrative and Drama
-          </p>
-        </li>
-        <li>
-          <h2>Ledarskaps Utbildning (Unga Leder Unga)</h2>
-          <p>Ungdomskontoret, Växjö Kommun</p>
-          <i class="far fa-calendar-alt"></i> April - August 2012
-          <p>
-            Ungdomskontoret och Växjö kommun, April-August 2012 (4 months) The
-            training took place in collaboration with SISU, Linnaeus University,
-            Tjejer Emellan, the SIP network and the police. The participants
-            have learned about: Leadership motivation Cooperation Respect for
-            differences Treating conflicts Roles and role models The
-            participants have also gained insight into the activities of various
-            associations that are aimed at young people. Educational organizers
-            have been the Youth Office and the municipality of Växjö.
-          </p>
-        </li>
-      </ul>
+    <!--Body börjar-->
+    <div class="eduContainer">
+      <div class="edu-box">
+        <h2>Webb Dev .NET</h2>
+        <p>Värnamo, Jönköping University</p>
+        <i class="far fa-calendar-alt"></i> 2020- Ongoing
+        <p>
+          A program built by the companies, for the people who love programing
+          and webb Dev!
+        </p>
+      </div>
+      <hr />
+      <div class="edu-box">
+        <h2>Espressohouse Education</h2>
+        <p>Kalmar, Espressohouse</p>
+        <i class="far fa-calendar-alt"></i> 2019
+        <p>
+          The training provides good knowledge in hygiene management, customer
+          service and coffee production in a café environment.
+        </p>
+      </div>
+      <hr />
+      <div class="edu-box">
+        <h2>Japansk Språkskola</h2>
+        <p>ARC Academy Osaka</p>
+        <i class="far fa-calendar-alt"></i> April 2017 - April 2018
+        <p>Japanese language school in Osaka Japan.</p>
+      </div>
+      <hr />
+      <div class="edu-box">
+        <h2>Art & Art Education and English, generell/baskurs</h2>
+        <p>Linnéuniversitetet</p>
+        <i class="far fa-calendar-alt"></i> August 2016 - Juni
+        <p>
+          An in-depth course in art studied parallel with a course that includes
+          three major parts of the English language: <br />
+          Grammar and Vocabulary <br />
+          Linguistics and History <br />
+          Poetry, Narrative and Drama
+        </p>
+      </div>
+      <hr />
+      <div class="edu-box">
+        <h2>Ledarskaps Utbildning (Unga Leder Unga)</h2>
+        <p>Ungdomskontoret, Växjö Kommun</p>
+        <i class="far fa-calendar-alt"></i> April - August 2012
+        <p>
+          Ungdomskontoret and Växjö kommun, April-August 2012 (4 months) The
+          training took place in collaboration with SISU, Linnaeus University,
+          Tjejer Emellan, the SIP network and the police. The participants have
+          learned about: Leadership motivation Cooperation Respect for
+          differences Treating conflicts Roles and role models The participants
+          have also gained insight into the activities of various associations
+          that are aimed at young people. Educational organizers have been the
+          Youth Office and the municipality of Växjö.
+        </p>
+      </div>
     </div>
 
-    <footer>
-      <a href="edu.html"><i class="fas fa-arrow-up"></i>Back to Top</a>
+    <!--Footer börjar-->
+    <footer id="mainFooter">
+      <a href="index.html"><i class="fas fa-arrow-up"></i>Back to Top</a>
       <p>
         Alma Härlin | Tomtebostigen 10C, 352 46 Växjö |
         <i class="fas fa-phone-alt"></i> (+46)739-71 43 37 |
-        <i class="fas fa-at"></i>
-        <a href="mailto:alma-harlin@hotmail.com"> alma-harlin@hotmail.com</a>
+        <a href="mailto:alma-harlin@hotmail.com"
+          ><i class="fas fa-at"></i> alma-harlin@hotmail.com</a
+        >
       </p>
     </footer>
 

@@ -11,86 +11,109 @@
     ></script>
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        ><img src="images/header.jpg" alt="Bild på Alma Härlin..." width="30%"
-      /></a>
+    <!--Header börjar-->
+    <header id="mainHeader">
+      <a href="index.html"><h1>ALMAs</h1></a>
       <nav>
-        <a href="index.html">ALL</a> | <a href="edu.html">EDUCATION</a> |
-        <a href="exp.html">EXPERIENCE</a> | <a href="contact.html">CONTACT</a>
+        <!--Flexbox som navigation-->
+        <div class="navContainer">
+          <div class="all">
+            <a href="index.html">ALL</a>
+          </div>
+          <div class="education">
+            <a href="edu.html">EDUCATION</a>
+          </div>
+          <div class="experience">
+            <a href="exp.html">EXPERIENCE</a>
+          </div>
+          <div class="contact"><a href="contact.html">CONTACT</a></div>
+        </div>
       </nav>
     </header>
 
-    <div>
-      <ul>
-        <li>
+    <!--Body börjar-->
+    <div id="mainBody">
+      <!--Container 1-->
+      <div class="container-1">
+        <div class="box-1">
           <a href=""
-            ><img
-              id="almaImg"
-              src="images/alma.jpg"
-              alt="Bild på mig..."
-              width="20%"
+            ><img id="almaImg" src="images/alma.jpg" alt="Bild på mig..."
           /></a>
-          <blockquote id="quote">
-            "Experiments blurring boundaries can lead to the future thar we
+        </div>
+        <div class="box-2">
+          <blockquote>
+            "Experiments blurring boundaries can lead to the future that we
             hope"
+            <br />
+            //Taiho Shin
           </blockquote>
-          //Taiho Shin
-        </li>
-        <div class="floatClear"></div>
-        <li>
+        </div>
+      </div>
+
+      <!--Container 2-->
+      <div class="container-2">
+        <div class="container-2-box">
           <h2>STYRKOR & INTRESSEN</h2>
           <p>Lösningsfokuserad | Hjälpsam | Organiserad & metodisk</p>
-          <p>Måleri & konst | Kaffe | Programmering | resor & kultur</p>
-        </li>
-        <li>
+          <p>Måleri & konst | Kaffe | Programmering | Resor & kultur</p>
+        </div>
+        <div class="container-2-box">
           <h2>SPRÅK</h2>
           <p>Swedish(Fluent) *****</p>
           <p>English ****</p>
           <p>Japanese **</p>
-        </li>
-        <li>
+        </div>
+        <div class="container-2-box">
           <h2>ÖVRIGT</h2>
           <p>EM and B driver's license</p>
+        </div>
+        <div class="container-2-box">
           <h3>Exhibitions</h3>
           <p>Tingsryd | Tokyo | Lidköping | Växjö</p>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              id="cardBack"
-              src="images/cardBack.jpg"
-              alt="Kort Badsida..."
-              width="80%"
-          /></a>
-        </li>
-        <li>
-          <i class="fab fa-facebook-f"></i> Facebook |<a
-            href="https://www.facebook.com/Almster.The.Hamster"
-            target="_blank"
-          >
-            Link to my facebook
-          </a>
-          <br />
-          <i class="fas fa-at"></i> Email |
-          <a href="mailto:alma-harlin@hotmail.com"> alma-harlin@hotmail.com</a>
-          <br />
-          <i class="fas fa-phone-alt"></i>
-          Phone | (+46)739-71 43 37
-        </li>
-        <li>
-          <a href=""
-            ><img
-              id="cardFront"
-              src="images/cardFront.jpg"
-              alt="Kort Framsida..."
-              width="80%"
-          /></a>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
 
-    <footer>
+      <!--"Flare" end pics-->
+      <a href=""
+        ><img
+          id="cardBack"
+          src="images/cardBack.jpg"
+          alt="Kort Badsida..."
+          width="80%"
+      /></a>
+      <br />
+      <i class="fab fa-facebook-f"></i> Facebook |
+      <a href="https://www.facebook.com/Almster.The.Hamster" target="_blank">
+        Link to facebook</a
+      >
+      <br /><br />
+      <i class="fas fa-at"></i> Email |
+      <a href="mailto:alma-harlin@hotmail.com"> alma-harlin@hotmail.com</a>
+      <br /><br />
+      <i class="fas fa-phone-alt"></i>
+      Phone | (+46)739-71 43 37
+      <br /><br />
+      <i class="fab fa-github"></i> GitHub |
+      <a href="https://github.com/Haal20">Link to GitHub</a>
+      <br /><br />
+      <i class="fab fa-linkedin"></i> LinkedIn |
+      <a
+        href="https://www.linkedin.com/in/alma-h%C3%A4rlin-93b36116a/"
+        target="_blank"
+      >
+        Link to LinkedIn</a
+      >
+      <br />
+      <a href=""
+        ><img
+          id="cardFront"
+          src="images/cardFront.jpg"
+          alt="Kort Framsida..."
+          width="80%"
+      /></a>
+    </div>
+    <!--Footer börjar-->
+    <footer id="mainFooter">
       <a href="index.html"><i class="fas fa-arrow-up"></i>Back to Top</a>
       <p>
         Alma Härlin | Tomtebostigen 10C, 352 46 Växjö |

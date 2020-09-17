@@ -1,14 +1,14 @@
-* {
+body {
   text-align: center;
-  color: antiquewhite;
+  color: #cccccc;
   background-color: black;
+  background-image: url("images/background.jpg");
+  line-height: 1.5;
 }
 
-ul {
-  list-style-type: none;
-}
-
+/*Knapp*/
 a {
+  color: #cccccc;
   text-decoration: none;
 }
 
@@ -16,18 +16,22 @@ a:hover {
   color: brown;
 }
 
-#cardBack {
-  margin-bottom: 100px;
-}
-
-#cardFront {
-  margin-top: 100px;
-}
-
 img {
-  margin: 3em;
+  border-radius: 25%;
 }
 
+img:hover {
+  opacity: 0.5;
+}
+
+/*Header*/
+@media (min-width: 667px) {
+  #mainHeader h1 {
+    font-size: 10em;
+  }
+}
+
+/*Footer*/
 footer {
   position: fixed;
   left: 0px;
@@ -35,18 +39,127 @@ footer {
   width: 100%;
 }
 
-#almaImg {
-  float: right;
-  padding-right: 100px;
+footer > p {
+  background-color: black;
+  margin-bottom: 0%;
+  padding: 10px 0 10px 0;
 }
 
-.floatClear {
-  clear: both;
+/*Nav*/
+.navContainer {
+  display: flex;
 }
 
-#quote {
-  padding-top: 100px;
-  padding-left: 200px;
-  font-size: 2.5em;
-  width: 500px;
+.navContainer div {
+  border-right: 1px #cccccc solid;
+  border-left: 1px #cccccc solid;
+  width: 30%;
+}
+
+.all,
+.education,
+.experience,
+.contact {
+  flex: 1;
+}
+
+/*INDEX:HTML*/
+.container-1 {
+  display: flex;
+  margin: 150px 15% 100px 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  order: 2;
+  flex: 1;
+}
+
+.box-1 img {
+  width: 100%;
+  margin-top: 17%;
+}
+
+.box-2 {
+  order: 1;
+  flex: 2;
+}
+
+.box-2 blockquote {
+  font-size: x-large;
+  font-weight: 700;
+  text-align: left;
+  margin: 17%;
+}
+
+/*container 2*/
+@media (min-width: 667px) {
+  .container-2 {
+    display: flex;
+  }
+}
+
+.container-2-box {
+  flex: 1;
+  padding: 10px;
+}
+
+/*flare pic*/
+#cardBack {
+  margin: 100px 0 100px 0;
+}
+
+#cardFront {
+  margin: 100px 0 200px 0;
+}
+
+/*EDU:HTML*/
+.eduContainer {
+  display: flex;
+  margin: 100px 20% 200px 20%;
+  flex-direction: column;
+}
+
+.edu-box {
+  flex: 1;
+  padding: 15px;
+  background-color: black;
+}
+
+/*CONTAINER:HTML*/
+.contactMe {
+  font-size: xxx-large;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: brown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(165, 42, 42, 0.74);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #cccccc;
+  padding: 20px;
 }
