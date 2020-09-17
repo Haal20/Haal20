@@ -1,8 +1,9 @@
 body {
   text-align: center;
   color: #cccccc;
-  background-color: black;
+  background-color: #08070d;
   background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
   line-height: 1.5;
 }
 
@@ -64,6 +65,11 @@ footer > p {
 }
 
 /*INDEX:HTML*/
+blockquote {
+  background-color: black;
+  padding: 10px;
+}
+
 .container-1 {
   display: flex;
   margin: 150px 15% 100px 15%;
