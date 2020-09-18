@@ -30,6 +30,10 @@ img:hover {
   #mainHeader h1 {
     font-size: 10em;
   }
+
+  body {
+    background-color: #08070d;
+  }
 }
 
 /*Footer*/
@@ -70,11 +74,13 @@ blockquote {
   padding: 10px;
 }
 
-.container-1 {
-  display: flex;
-  margin: 150px 15% 100px 15%;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 667px) {
+  .container-1 {
+    display: flex;
+    margin: 150px 15% 100px 15%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .box-1 {
