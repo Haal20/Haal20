@@ -10,7 +10,7 @@ function HomeView() {
       "Experiments blurring boundaries can lead to the future that we hope"
       //Taiho Shin
       <br><br>
-      Welcome to my personal webpage about myself. I like to help others solve problems, and strive to do so in a beautifull way.
+      Welcome to my personal webpage about myself. I like to help others solve problems, and strive to do so in a beautiful way.
       <br><br>
       <a class="link" href="https://motherfuckingwebsite.com/">Link to a cool place here</a>
     </p>
