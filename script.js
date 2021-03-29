@@ -12,7 +12,7 @@ function HomeView() {
       <br><br>
       Welcome to my personal webpage about myself. I like to help others solve problems, and strive to do so in a beautifull way.
       <br><br>
-      <a class="link" href="/">Link to a cool place here</a>
+      <a class="link" href="https://motherfuckingwebsite.com/">Link to a cool place here</a>
     </p>
     </div>
     <div>
@@ -42,6 +42,6 @@ webbpages.addEventListener('click', (e) => {
 cv.addEventListener('click', (e) => {
     main.innerHTML = `<div>
     <h2>Education/Experience</h2>
-    <p>Open a PDF file <a href="./images/HaalCV2021.pdf">MyCV</a></p>
+    <p>Open a PDF file: <a href="./images/HaalCV2021.pdf">MyCV</a></p>
   </div>`;
 });
