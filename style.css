@@ -1,8 +1,7 @@
 body {
-  text-align: center;
   color: #cccccc;
   background-color: #08070d;
-  background-image: url("images/background.jpg");
+  background-image: url(./images/norrsken.jpg);
   background-repeat: no-repeat;
   line-height: 1.5;
 }
@@ -19,10 +18,16 @@ a:hover {
 
 img {
   border-radius: 25%;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
 }
 
 img:hover {
-  opacity: 0.5;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 /*Header*/
@@ -40,138 +45,9 @@ img:hover {
 footer {
   position: fixed;
   left: 0px;
+  padding-left: 10px;
   bottom: 0px;
   width: 100%;
-}
-
-footer > p {
-  background-color: black;
-  margin-bottom: 0%;
-  padding: 10px 0 10px 0;
-}
-
-/*Nav*/
-.navContainer {
-  display: flex;
-}
-
-.navContainer div {
-  border-right: 1px #cccccc solid;
-  border-left: 1px #cccccc solid;
-  width: 30%;
-}
-
-.all,
-.education,
-.experience,
-.contact {
-  flex: 1;
-}
-
-/*INDEX:HTML*/
-blockquote {
-  background-color: black;
-  padding: 10px;
-}
-
-@media (min-width: 667px) {
-  .container-1 {
-    display: flex;
-    margin: 150px 15% 100px 15%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.box-1 {
-  order: 2;
-  flex: 1;
-}
-
-.box-1 img {
-  width: 100%;
-  margin-top: 17%;
-}
-
-.box-2 {
-  order: 1;
-  flex: 2;
-}
-
-.box-2 blockquote {
-  font-size: x-large;
-  font-weight: 700;
-  text-align: left;
-  margin: 17%;
-}
-
-/*container 2*/
-@media (min-width: 667px) {
-  .container-2 {
-    display: flex;
-  }
-}
-
-.container-2-box {
-  flex: 1;
-  padding: 10px;
-}
-
-/*flare pic*/
-#cardBack {
-  margin: 100px 0 100px 0;
-}
-
-#cardFront {
-  margin: 100px 0 200px 0;
-}
-
-/*EDU:HTML*/
-.eduContainer {
-  display: flex;
-  margin: 100px 20% 200px 20%;
-  flex-direction: column;
-}
-
-.edu-box {
-  flex: 1;
-  padding: 15px;
-  background-color: black;
-}
-
-/*CONTAINER:HTML*/
-.contactMe {
-  font-size: xxx-large;
-}
-
-input[type="text"],
-select,
-textarea {
-  width: 60%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: brown;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: rgba(165, 42, 42, 0.74);
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #cccccc;
-  padding: 20px;
+  background-color: white;
+  color: #08070d;
 }
