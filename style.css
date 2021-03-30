@@ -1,19 +1,34 @@
 body {
   color: #cccccc;
-  background-color: #08070d;
+  background-color: rgb(100, 209, 209);
   background-image: url(./images/norrsken.jpg);
   background-repeat: no-repeat;
   line-height: 1.5;
 }
 
+@keyframes linkOn {
+  from {color: #cccccc;}
+  to {text-shadow: 0 0 2px 1px turquoise;
+    font-size: 24px;}
+}
 a {
   color: #cccccc;
+  transition: 0.4ms;
 }
-
 a:hover {
-  text-shadow: 0 0 2px 1px turquoise;
+  animation-name: linkOn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
+
+@keyframes imageOn {
+  from {height: 80px;
+    width: 80px;}
+  to {box-shadow: 0 0 2px 1px  turquoise;
+    height: 200px;
+    width: 200px;}
+}
 img {
   border-radius: 25%;
   height: 80px;
@@ -23,9 +38,19 @@ img {
   padding: 5px;
   background-color: white;
 }
+img:hover{
+  animation-name: imageOn;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
 
-img:hover {
-  box-shadow: 0 0 2px 1px  turquoise;
+button {
+  transition-duration: 1s;
+}
+button:hover {
+  font-size: 20px;
+  background:  rgb(100, 209, 209);
 }
 
 /*Header*/
@@ -35,7 +60,7 @@ img:hover {
   }
 
   body {
-    background-color: #08070d;
+    background-color: rgb(100, 209, 209);;
   }
 }
 
