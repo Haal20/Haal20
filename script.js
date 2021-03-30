@@ -28,7 +28,20 @@ function HomeView() {
 HomeView();
 
 github.addEventListener('click', (e) => {
-    main.innerHTML = `<h2>GitHub Repos</h2>`;
+  main.innerHTML = `<h2>GitHub Repos</h2>`;
+
+  fetch("https://api.github.com/users/haal20/repos")
+   .then(function(response) {
+       return response.json();
+   })
+   .then(function(json) {
+       console.log("Github API", json);
+
+       for (i=0; i<json.length; i++) {
+        main.insertAdjacentHTML("beforeend", "<a href='"+ json[i].html_url + "'target =' _blank'><div>" + json[i].name + "<div></a>");
+       }
+
+   });
 });
 
 webbpages.addEventListener('click', (e) => {
