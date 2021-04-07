@@ -1,3 +1,3 @@
 # cv-portfolio
 
-https://haal20.github.io/Haal20/
+[![Haal20's GitHub stats](https://github-readme-stats.vercel.app/api?username=Haal20)](https://github.com/Haal20/github-readme-stats)
