@@ -1,6 +1,6 @@
 # Cv-portfolio
 
-Ruby and Shell should be C# in the stats below
+
 
 # GitHub Stats
 
