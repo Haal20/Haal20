@@ -14,7 +14,7 @@ function HomeView() {
       <br><br>
     </p>
     </div>
-    <div>
+    <div id="contact">
     <a href="mailto:alma-harlin@hotmail.com"><i class="far fa-envelope"></i> email</a>
     <a href="https://steamcommunity.com/id/Abokiddie/"><i class="fab fa-steam-symbol"></i> steam</a>
     <a href="https://www.facebook.com/Almster.The.Hamster/"><i class="fab fa-facebook-f"></i> facebook</a>
@@ -37,7 +37,7 @@ github.addEventListener('click', (e) => {
        console.log("Github API", json);
 
        for (i=0; i<json.length; i++) {
-        main.insertAdjacentHTML("beforeend", "<a href='"+ json[i].html_url + "'target =' _blank'><div>" + json[i].name + "<div></a>");
+        main.insertAdjacentHTML("beforeend", "<a href='"+ json[i].html_url + "'target =' _blank'><div><i class='fab fa-github'></i> " + json[i].name + "<div></a>");
        }
 
    });

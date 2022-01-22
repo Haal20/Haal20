@@ -15,11 +15,12 @@ body {
 
 a {
   transition-duration: 1s;
+  text-decoration: none;
   color: #cccccc;
 }
 a:hover {
   text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #myName {
@@ -30,7 +31,7 @@ a:hover {
 }
 #myName:hover {
   text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #profil {
@@ -48,6 +49,10 @@ a:hover {
   background-color: rgba(235, 187, 235, 0.76);
   height: 200px;
   width: 200px;
+}
+
+#contact {
+  text-align: center;
 }
 
 button {
