@@ -7,12 +7,11 @@ let cv = document.getElementById('cv');
 function HomeView() {
     main.innerHTML = `<div>
     <p>
+      Welcome to my personal webpage about myself. My believe is that you can learn anything. I also like helping others solve problems, and strive to do so in a beautiful way.
+      <br><br>
       "Experiments blurring boundaries can lead to the future that we hope"
       //Taiho Shin
       <br><br>
-      Welcome to my personal webpage about myself. I like to help others solve problems, and strive to do so in a beautiful way.
-      <br><br>
-      <a class="link" href="https://motherfuckingwebsite.com/">Link to a cool place here</a>
     </p>
     </div>
     <div>

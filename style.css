@@ -1,45 +1,61 @@
 body {
   color: #cccccc;
-  background-color: rgb(100, 209, 209);
-  background-image: url(./images/haal1.jpg);
+  background-color: rgb(34, 39, 39);
+  background-image: url(./images/haal3.jpg);
   background-repeat: no-repeat;
   line-height: 1.5;
+  max-width: 500px;
+  margin: auto;
 }
 
+.content {
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 2em;
+}
 
 a {
   transition-duration: 1s;
   color: #cccccc;
 }
 a:hover {
-  text-shadow: 0 0 2px 1px turquoise;
+  text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
   font-size: 24px;
 }
 
+#myName {
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  color: #cccccc;
+  text-decoration: none;
+}
+#myName:hover {
+  text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
+  font-size: 40px;
+}
 
 #profil {
   transition-duration: 1s;
-  transition-delay: 0.5s;
   border-radius: 25%;
   height: 80px;
   width: 80px;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(235, 187, 235, 0.76);
   border-radius: 4px;
   padding: 5px;
   background-color: white;
 }
 #profil:hover{
-  box-shadow: 0 0 2px 1px  rgb(232, 97, 245);
+  box-shadow: 0 0 2px 1px  rgba(235, 187, 235, 0.76);
+  background-color: rgba(235, 187, 235, 0.76);
   height: 200px;
   width: 200px;
 }
 
 button {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 button:hover {
-  font-size: 20px;
-  background:  rgb(232, 97, 245);
+  font-size: 14px;
+  background: rgba(235, 187, 235, 0.76);
 }
 
 /*Header*/
