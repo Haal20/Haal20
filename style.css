@@ -1,35 +1,25 @@
 body {
   color: #cccccc;
   background-color: rgb(100, 209, 209);
-  background-image: url(./images/norrsken.jpg);
+  background-image: url(./images/haal1.jpg);
   background-repeat: no-repeat;
   line-height: 1.5;
 }
 
-@keyframes linkOn {
-  from {color: #cccccc;}
-  to {text-shadow: 0 0 2px 1px turquoise;
-    font-size: 24px;}
-}
+
 a {
+  transition-duration: 1s;
   color: #cccccc;
-  transition: 0.4ms;
 }
 a:hover {
-  animation-name: linkOn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  text-shadow: 0 0 2px 1px turquoise;
+  font-size: 24px;
 }
 
 
-@keyframes imageOn {
-  from {height: 80px;
-    width: 80px;}
-  to {box-shadow: 0 0 2px 1px  turquoise;
-    height: 200px;
-    width: 200px;}
-}
-img {
+#profil {
+  transition-duration: 1s;
+  transition-delay: 0.5s;
   border-radius: 25%;
   height: 80px;
   width: 80px;
@@ -38,11 +28,10 @@ img {
   padding: 5px;
   background-color: white;
 }
-img:hover{
-  animation-name: imageOn;
-  animation-duration: 4s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+#profil:hover{
+  box-shadow: 0 0 2px 1px  rgb(232, 97, 245);
+  height: 200px;
+  width: 200px;
 }
 
 button {
@@ -50,7 +39,7 @@ button {
 }
 button:hover {
   font-size: 20px;
-  background:  rgb(100, 209, 209);
+  background:  rgb(232, 97, 245);
 }
 
 /*Header*/
@@ -60,7 +49,7 @@ button:hover {
   }
 
   body {
-    background-color: rgb(100, 209, 209);;
+    background-color: rgb(34, 39, 39);
   }
 }
 
@@ -74,3 +63,4 @@ footer {
   background-color: white;
   color: #08070d;
 }
+
