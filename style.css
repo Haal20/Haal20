@@ -22,7 +22,7 @@ a {
   color: #cccccc;
 }
 a:hover {
-  text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
+  color: rgba(235, 187, 235, 0.76);
   font-size: 20px;
 }
 
@@ -33,7 +33,7 @@ a:hover {
   text-decoration: none;
 }
 #myName:hover {
-  text-shadow: 0 0 2px 1px rgba(211, 69, 211, 0.3);
+  color: rgba(235, 187, 235, 0.76);
   font-size: 35px;
 }
 
@@ -56,6 +56,20 @@ a:hover {
 
 #contact {
   text-align: center;
+}
+
+#upBtn {
+  position: sticky; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  left: 99vw; /* relative position so no worries about different devices*/
+  border: none; 
+  outline: none; 
+  background-color: rgba(125, 24, 192, 0.322); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 12px;
 }
 
 button {

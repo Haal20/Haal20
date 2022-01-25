@@ -2,7 +2,7 @@ let main = document.getElementById('main');
 let github = document.getElementById('github');
 let webbpages = document.getElementById('webbpages');
 let cv = document.getElementById('cv');
-
+let upBtn = document.getElementById("upBtn");
 
 function HomeView() {
     main.innerHTML = `<div>
@@ -58,3 +58,9 @@ cv.addEventListener('click', (e) => {
     <p>Open a PDF file: <a href="./images/almaCV_2022_eng.pdf">MyCV</a></p>
   </div>`;
 });
+
+// When the user clicks on the button, scroll to the top of the document. I don't know any alternatives yet. Will remake it into smooth scroll dough.
+function goUp() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
