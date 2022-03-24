@@ -49,10 +49,9 @@ a:hover {
   width: 9em;
 }
 
-
 .nav{
   height: 40px;
-  width: 100%;
+  width: 60%;
 }
 
 .nav ul {
@@ -64,8 +63,6 @@ a:hover {
   float: left;
   display: flex;
 }
-
-
 
 
 
