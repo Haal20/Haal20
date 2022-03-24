@@ -35,14 +35,14 @@ a:hover {
   margin: 0 auto;
 }
 /* Här är styling för bilden som ligger i about-me sektionen */
-.about-me img {
+.about-me .meImg {
   transition-duration: 1s;
   height: 6em;
   width: 6em;
   border-radius: 50%;
 }
 /* Här är styling för bilden som ligger i about-me sektionen när man har musen över*/
-.about-me img:hover{
+.about-me .meImg:hover{
   box-shadow: 0 0 2px 1px  rgba(235, 187, 235, 0.76);
   background-color: rgba(235, 187, 235, 0.76);
   height: 9em;
