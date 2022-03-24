@@ -1,83 +1,90 @@
 body {
+  box-sizing: border-box;
+
+  margin: 0;
+  font-family: Helvetica, "sans serif";
   color: #cccccc;
-  background-color: rgb(34, 39, 39);
+  line-height: 1.5;
+
   background-image: url(./images/haal1.jpg);
   background-repeat: no-repeat;
-  line-height: 1.5;
-  /*max-width: 500px;*/
-  margin: 0 20em 0 20em;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-.content {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 2em;
-  font-size:xx-large;
-}
-
 a {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   text-decoration: none;
   color: #cccccc;
 }
 a:hover {
   color: rgba(235, 187, 235, 0.76);
-  font-size: 20px;
 }
 
-#myName {
-  transition-duration: 1s;
-  transition-delay: 0.5s;
+
+.about-me {
   color: #cccccc;
-  text-decoration: none;
-}
-#myName:hover {
-  color: rgba(235, 187, 235, 0.76);
-  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 150px 10em;
+  height: 200px;
 }
 
-#profil {
+/* Här är styling för bilden som ligger i about-me sektionen */
+.about-me img {
   transition-duration: 1s;
-  border-radius: 25%;
-  height: 80px;
-  width: 80px;
-  border: 1px solid rgba(235, 187, 235, 0.76);
-  border-radius: 4px;
-  padding: 5px;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
   background-color: white;
 }
-#profil:hover{
+/* Här är styling för bilden som ligger i about-me sektionen när man har musen över*/
+.about-me img:hover{
   box-shadow: 0 0 2px 1px  rgba(235, 187, 235, 0.76);
   background-color: rgba(235, 187, 235, 0.76);
-  height: 200px;
-  width: 200px;
+  height: 10em;
+  width: 10em;
 }
 
-#contact {
+
+.nav{
+  height: 50px;
   text-align: center;
 }
 
-#upBtn {
+
+
+.upBtn {
   position: sticky; /* Fixed/sticky position */
   bottom: 30px; /* Place the button at the bottom of the page */
   left: 70vw; /* relative position so no worries about different devices*/
-  border: none; 
-  outline: none; 
-  background-color: rgba(125, 24, 192, 0.322); 
-  color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px;
-  border-radius: 10px; /* Rounded corners */
-  font-size: 12px;
+  transition-duration: 0.5s;
+  background-color:white;
+  color: gray;
+  padding: 12px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.upBtn:hover {
+  font-size: 120%;
+  color: black;
+  background: rgba(235, 187, 235, 0.76);
 }
 
-button {
+.btn {
   transition-duration: 0.5s;
+  background-color:white;
+  color: gray;
+  padding: 12px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
 }
-button:hover {
-  font-size: 14px;
+.btn:hover {
+  font-size: 120%;
+  color: black;
   background: rgba(235, 187, 235, 0.76);
 }
 
@@ -94,12 +101,10 @@ button:hover {
 
 /*Footer*/
 footer {
-  position: fixed;
-  left: 0px;
-  padding-left: 10px;
-  bottom: 0px;
-  width: 100%;
-  background-color: white;
-  color: #08070d;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.34);
+  color: #cccccc;
+  padding: 100px 15px;
+
 }
 

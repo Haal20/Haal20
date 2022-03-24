@@ -8,30 +8,39 @@
     <script src="https://kit.fontawesome.com/6ec97db393.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="content">
+
     <header>
-      <div>
-        <h1>
-          <a href="./index.html"><img id="profil" src="./images/almaCV.jpg" alt="almaharlin"></a> 
-        </h1>  
-        <h1>
-          <a class="link" id="myName" href="./index.html">Alma Härlin</a>
-        </h1>
-      </div>
-      <nav>
-        <button id="github">github repos</button>
-        <button id="webbpages">webbpages I manage</button>
-        <button id="cv">education/experience</button>
-      </nav>
+
+      <section class="about-me">
+          <h1>
+            <a href="./index.html"><img src="./images/almaCV.jpg" alt="picture of alma"></a> 
+          </h1>  
+          <h1>
+            <a class="link" href="./index.html">Alma Härlin <br/>Software Engineer Trainee</a>
+          </h1>
+        </div>
+      </section>
+
+      <section class="nav">
+        <a class="btn" id="github">github repos</a>
+        <a class="btn" id="webbpages">webbpages I manage</a>
+        <a class="btn" id="cv">education/experience</a>
+      </section>
+
     </header>
+    
     <main id="main">
       <!-- Render page HERE -->
-
     </main>
+    
     <br/>
-    <button onclick="goUp()" id="upBtn" title="Go Up"><i class="fas fa-arrow-up"></i> Go to top</button>  
-  </div>
-    <footer> <i class="far fa-copyright"></i> 2022</footer>
+    <a class="upBtn" onclick="goUp()" title="Go Up"><i class="fas fa-arrow-up"></i> Go to top</a>  
+
+    <footer>
+      <h3>
+        <i class="far fa-copyright"></i> 2022
+      </h3>
+    </footer>
 
     <script src="script.js"></script>
   </body>
