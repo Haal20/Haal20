@@ -29,30 +29,51 @@ a:hover {
   padding: 150px 10em;
   height: 200px;
 }
-
+.about-me div {
+ padding: 0px 30px;
+  width: 60%;
+  margin: 0 auto;
+}
 /* Här är styling för bilden som ligger i about-me sektionen */
 .about-me img {
   transition-duration: 1s;
   height: 6em;
   width: 6em;
   border-radius: 50%;
-  background-color: white;
 }
 /* Här är styling för bilden som ligger i about-me sektionen när man har musen över*/
 .about-me img:hover{
   box-shadow: 0 0 2px 1px  rgba(235, 187, 235, 0.76);
   background-color: rgba(235, 187, 235, 0.76);
-  height: 10em;
-  width: 10em;
+  height: 9em;
+  width: 9em;
 }
 
 
 .nav{
-  height: 50px;
-  text-align: center;
+  height: 40px;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flexbox;
+}
+
+.nav li {
+  float: left;
+  display: flex;
 }
 
 
+
+
+
+#main{
+  padding: 150px 30px;
+  width: 60%;
+  margin: 0 auto;
+}
 
 .upBtn {
   position: sticky; /* Fixed/sticky position */
@@ -101,7 +122,7 @@ a:hover {
 
 /*Footer*/
 footer {
-  text-align: center;
+  /*text-align: center;*/
   background-color: rgba(0, 0, 0, 0.34);
   color: #cccccc;
   padding: 100px 15px;
