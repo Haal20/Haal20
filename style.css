@@ -1,6 +1,4 @@
 body {
-  box-sizing: border-box;
-
   margin: 0;
   font-family: Helvetica, "sans serif";
   color: #cccccc;
@@ -26,45 +24,60 @@ a:hover {
 .about-me {
   color: #cccccc;
   background-color: rgba(0, 0, 0, 0.34);
-  padding: 150px 10em;
-  height: 200px;
-}
-.about-me div {
- padding: 0px 30px;
-  width: 60%;
-  margin: 0 auto;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* Här är styling för bilden som ligger i about-me sektionen */
 .about-me .meImg {
+  margin-right: 30px;
   transition-duration: 1s;
   height: 6em;
   width: 6em;
-  border-radius: 50%;
+  border-radius: 50%; /*Gör bilden rund*/
 }
 /* Här är styling för bilden som ligger i about-me sektionen när man har musen över*/
 .about-me .meImg:hover{
+  transition-delay: 0.5s;
   box-shadow: 0 0 2px 1px  rgba(235, 187, 235, 0.76);
   background-color: rgba(235, 187, 235, 0.76);
   height: 9em;
   width: 9em;
 }
 
-.nav{
-  height: 40px;
-  width: 60%;
+.nav {
+  display: flex;
+  justify-content: center;
 }
 
 .nav ul {
   list-style: none;
-  display: flexbox;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start; /*Mitten horisontellt*/
+  flex-wrap: wrap; /*behåller storlek men byter rad*/
 }
-
 .nav li {
-  float: left;
+  margin: 1px 8px;
   display: flex;
 }
-
-
+.btn {
+  transition-duration: 0.5s;
+  background-color:white;
+  color: gray;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 90%;
+}
+.btn:hover {
+  font-size: 100%;
+  color: black;
+  background: rgba(235, 187, 235, 0.76);
+}
 
 #main{
   padding: 150px 30px;
@@ -80,7 +93,7 @@ a:hover {
   transition-duration: 0.5s;
   background-color:white;
   color: gray;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
@@ -91,35 +104,9 @@ a:hover {
   background: rgba(235, 187, 235, 0.76);
 }
 
-.btn {
-  transition-duration: 0.5s;
-  background-color:white;
-  color: gray;
-  padding: 12px 25px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-}
-.btn:hover {
-  font-size: 120%;
-  color: black;
-  background: rgba(235, 187, 235, 0.76);
-}
-
-/*Header*/
-@media (min-width: 667px) {
-  #mainHeader h1 {
-    font-size: 10em;
-  }
-
-  body {
-    background-color: rgb(34, 39, 39);
-  }
-}
-
 /*Footer*/
 footer {
-  /*text-align: center;*/
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.34);
   color: #cccccc;
   padding: 100px 15px;

@@ -1,4 +1,5 @@
 let main = document.getElementById('main');
+let helloworld = document.getElementById('helloworld');
 let github = document.getElementById('github');
 let webbpages = document.getElementById('webbpages');
 let cv = document.getElementById('cv');
@@ -25,6 +26,10 @@ function HomeView() {
     </div>`;
 }
 HomeView();
+
+helloworld.addEventListener('click', (e) => {
+  HomeView();
+});
 
 github.addEventListener('click', (e) => {
   main.innerHTML = `<h2>GitHub Repos</h2>`;
