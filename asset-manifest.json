@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Haal20/static/css/main.322f6461.css",
+    "main.js": "/Haal20/static/js/main.fe54adb4.js",
+    "static/media/angryCat.png": "/Haal20/static/media/angryCat.8641e56654cb64016a52.png",
+    "static/media/almaCV_2022_eng.pdf": "/Haal20/static/media/almaCV_2022_eng.c750db3782623482c55d.pdf",
+    "index.html": "/Haal20/index.html",
+    "main.322f6461.css.map": "/Haal20/static/css/main.322f6461.css.map",
+    "main.fe54adb4.js.map": "/Haal20/static/js/main.fe54adb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.322f6461.css",
+    "static/js/main.fe54adb4.js"
+  ]
+}
