@@ -7,19 +7,45 @@ import { Nav } from './components/Nav'
 import { Portfolio } from './components/Portfolio'
 import styled from '@emotion/styled'
 import { almaColors } from './styles/SharedStyles'
+import { useState, useEffect } from 'react'
+
+
+const url = "https://api.github.com/users/Haal20"
 
 export const App = () => {
+  const [data, setData] = useState()
+
+  const getData = () => {
+    return fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      setData({data})
+    })
+  }
+  
+  // useEffect(() => {
+  //   getData()
+  // }, [])
+
   return (
       <StyledAppHeader>
-        <Header />
+        <Header/>
         <About />
-        <Portfolio />
+        <Portfolio data={getData} />
         <Experience />
         <Nav />
         <Footer />
       </StyledAppHeader>
   )
 }
+
+
+
+
+
+
+
+
 const StyledAppHeader = styled.header`
   background-color: ${almaColors.white};
   min-height: 100vh;

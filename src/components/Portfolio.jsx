@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
 
 export const Portfolio = (props) => {
-  // console.log(props)
   return (
     <StyledPortfolioContainerDiv>
         <div>
