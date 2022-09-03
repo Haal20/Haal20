@@ -38,14 +38,14 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "gh-pages": "^4.0.0",
     "prettier": "2.7.1",
-    "react-scripts": "^5.0.1",
-    "@svgr/webpack":"^6.2.1"
+    "react-scripts": "^5.0.1"
   },
   "overrides": {
     "react": "16.13.1",
-    "@svgr/webpack":"^6.2.1",
+    "@svgr/webpack": "^6.2.1",
     "react-dom": "16.13.1"
   }
 }

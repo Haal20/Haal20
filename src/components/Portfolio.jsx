@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
+import { useState, useEffect, componentDidMount } from 'react'
 
 export const Portfolio = (props) => {
+
   return (
     <StyledPortfolioContainerDiv>
         <div>
             Portfolio
         </div>
         <StyledPortfolioBoxDiv>
-            My git repos
+        {'My git repos'}
         </StyledPortfolioBoxDiv>
     </StyledPortfolioContainerDiv>
   )

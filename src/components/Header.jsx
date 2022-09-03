@@ -7,7 +7,7 @@ export const Header = (props) => {
   return (
     <StyledHeaderContainerDiv>
       <div>
-        Hi! Welcome to mwaaaa site~❤️
+        Hi! Welcome to my site~❤️
       </div>
       <StyleFlippDiv>
         ┬─┬ ノ( ゜-゜ノ)
