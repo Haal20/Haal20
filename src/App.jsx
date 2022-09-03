@@ -31,18 +31,18 @@ export const App = () => {
   //   setGitData(gitData)
   // }
 
-  const getData = () => {
-    fetch(gitUrl)
-      .then(res => {return res.json()})
-      .then(json => {
-        setGitData(json)
-    })
-  }
+  // const getData = () => {
+  //   fetch(gitUrl)
+  //     .then(res => {return res.json()})
+  //     .then(json => {
+  //       setGitData(json)
+  //   })
+  // }
 
-  componentDidMount = () => {
-    getData()
-    console.log('dsldfhsikahgf   ' + gitData)
-  }
+  // componentDidMount = () => {
+  //   getData()
+  //   console.log('dsldfhsikahgf   ' + gitData)
+  // }
 
   return (
       <StyledAppHeader>
