@@ -17,6 +17,7 @@ export const Nav = (props) => {
   )
 }
 
+// TODO: Make so the active changes dependent on what is in the window
 /* Styles for components */
 const StyledNavContainerDiv = styled.div`
     background-color: rgba(0,0,0,0.3);

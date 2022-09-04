@@ -10,9 +10,7 @@ export const About = (props) => {
   return (
     <StyledAboutContainerDiv>
       <StyledAboutBoxDiv>
-        
-      <StyledAppLogoImg src={logo} alt="logo" />
-    
+        <StyledAppLogoImg src={logo} alt="logo" />
       </StyledAboutBoxDiv>
       <StyledAboutBoxDiv>
         I'm
@@ -55,11 +53,17 @@ const StyledAboutContainerDiv = styled.div`
 `
 const StyledAboutBoxDiv = styled.div`
   text-align: left;
-  margin: 0.5em 3em;
+  margin: 0.5em 3em; 
 `
+// TODO: ON HOVER DOES NOT WORK HERE
 const StyledAppLogoImg = styled.img`
   height: 40vmin;
   pointer-events: none;
   border: ${almaColors.black} solid 2px;
+  border-radius: 0.5em;
   box-shadow: -25px 25px rgba(0, 0, 0, 0.2), -25px 25px rgba(0, 0, 0, 0.19);
+  &:hover{
+    box-shadow: none;
+    margin: 1.5em 1.5em 2em 2em;
+  }
 `
