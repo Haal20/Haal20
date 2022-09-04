@@ -19,7 +19,7 @@ export const About = (props) => {
         <StyledAlmaDiv>
           Alma Härlin
         </StyledAlmaDiv>
-        Software Engeneer Trainee @IKEA
+        Software Engineer Trainee @IKEA
         <br />
         <br />
         <div>

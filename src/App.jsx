@@ -7,49 +7,26 @@ import { Nav } from './components/Nav'
 import { Portfolio } from './components/Portfolio'
 import styled from '@emotion/styled'
 import { almaColors } from './styles/SharedStyles'
-import { useState, useEffect, componentDidMount } from 'react'
+import React, {useState, useEffect} from "react";
 import { GETgitData } from './assets/apis/github'
-import { gitUrl } from './assets/apis/api-urls'
-
-
-// delivering promise
-console.log(GETgitData())
-
-// delivering array of object
-fetch(gitUrl)
-      .then(res => {return res.json()})
-      .then(json => { console.log(json)
-        //setGitData(json)
-    })
-
 
 export const App = () => {
   const [gitData, setGitData] = useState()
 
-  //  const getData = () => {
-  //   const gitData = GETgitData();
-  //   setGitData(gitData)
-  // }
+  const getData = async() => {
+    const data = await GETgitData();
+    setGitData(data)
+  }
 
-  // const getData = () => {
-  //   fetch(gitUrl)
-  //     .then(res => {return res.json()})
-  //     .then(json => {
-  //       setGitData(json)
-  //   })
-  // }
-
-  // componentDidMount = () => {
-  //   getData()
-  //   console.log('dsldfhsikahgf   ' + gitData)
-  // }
-
+  useEffect(() => {
+   getData()
+  }, [])
+  
   return (
       <StyledAppHeader>
         <Header/>
         <About />
-
-        <Portfolio/>
+        <Portfolio gitData={gitData} />
         <Experience />
         <Nav />
         <Footer />
@@ -66,4 +43,3 @@ const StyledAppHeader = styled.header`
   font-size: calc(5px + 2vmin);
   color: #000000;   
 `
-

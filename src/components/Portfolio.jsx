@@ -1,24 +1,28 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
-import { useState, useEffect, componentDidMount } from 'react'
 
 export const Portfolio = (props) => {
-
+  console.log(props.gitData)
   return (
-    <StyledPortfolioContainerDiv>
-        <div>
-            Portfolio
-        </div>
-        <StyledPortfolioBoxDiv>
-        {'My git repos'}
-        </StyledPortfolioBoxDiv>
-    </StyledPortfolioContainerDiv>
+    <StyledContainerDiv>
+        <StyledBoxDiv>
+            My github reops
+        </StyledBoxDiv>
+        <StyledCardContainerDiv>
+          {props.gitData?.map(el => {
+            el.data
+            return <StyledCardLink target="_blank" rel="noopener noreferrer"href={el.html_url} key={el.id}>
+              {el.name}
+              </StyledCardLink>
+          })}
+        </StyledCardContainerDiv>
+    </StyledContainerDiv>
   )
 }
 
 /* Styles for components */
-const StyledPortfolioContainerDiv = styled.div`
+const StyledContainerDiv = styled.div`
   padding: 1em 0em; 
   background-color: ${almaColors.white};
   width: 100%;
@@ -27,12 +31,37 @@ const StyledPortfolioContainerDiv = styled.div`
   justify-content: center;
   flex-direction: column;
 `
-const StyledPortfolioBoxDiv = styled.div`
+const StyledBoxDiv = styled.div`
   text-shadow:  2px 2px 5px ${almaColors.grey500};
   margin: 0.5em 1em;
   transition: 1s;
   &:hover{
     text-shadow: 2px 2px 5px ${almaColors.black};
-    transform: scale(1.7);
+  }
+`
+const StyledCardContainerDiv = styled.div`
+  margin: 0.5em 1em;
+  padding: 0em 1em 0em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`
+const StyledCardLink = styled.a`
+  border: 2px ${almaColors.black} solid;
+  margin: 2em 2em;
+  padding: 0em 1em;
+  width: 9em;
+  height: 5em;
+  background-color: ${almaColors.grey200};
+  color: ${almaColors.blue};
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: bold;
+  
+  transition: 0.2s;
+  &:hover{
+    margin: 1.5em 1.5em 2em 2em;
+    box-shadow: -10px 10px ${almaColors.black}, -10px 10px ${almaColors.black};
   }
 `
