@@ -38,6 +38,7 @@ const StyledAlmaDiv = styled.div`
   text-shadow:  2px 2px 5px ${almaColors.grey500};
   justify-content: center;
   font-size: larger;
+  width: max-content;
   transition: 1s;
   &:hover {
     text-shadow: 2px 2px 5px ${almaColors.black};

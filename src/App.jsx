@@ -28,8 +28,8 @@ export const App = () => {
         <About />
         <GithubCards gitData={gitData} />
         <Cv />
-        <Nav />
         <Footer />
+        <Nav />
       </StyledAppHeader>
   )
 }
@@ -41,5 +41,5 @@ const StyledAppHeader = styled.header`
   align-items: center;
   justify-content: center;
   font-size: calc(5px + 2vmin);
-  color: #000000;   
+  color: ${almaColors.black};   
 `

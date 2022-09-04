@@ -27,7 +27,7 @@ export const Footer = (props) => {
 const StyledFooterContainerDiv = styled.div`
   border-top: #000000 1px solid;
   width: 90%;
-  padding: 1em 0em 3em 0em;
+  padding: 2em 0em 4em 0em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

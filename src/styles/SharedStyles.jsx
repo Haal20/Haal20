@@ -18,9 +18,15 @@ export const almaColors = {
 
 export const StyledAppLink = styled.a`
     color: ${almaColors.blue};
-    transition: 1s;
+    transition: 0.5s;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.7rem;
     &:hover {
-        text-shadow: 2px 2px 5px gray;
-        border-color: transparent;
+        background-color: #48484866;
+        border-radius: 2rem;
+    }
+    &:active {
+        background-color: ${almaColors.white};
+        border-radius: 3rem;
     }
 `

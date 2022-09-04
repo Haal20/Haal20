@@ -2,10 +2,11 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
 
+
 export const GithubCards = (props) => {
   console.log(props.gitData)
   return (
-    <StyledContainerDiv>
+    <StyledContainerDiv id='github'>
         <StyledBoxDiv>
             My github reops
         </StyledBoxDiv>

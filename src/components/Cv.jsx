@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export const Cv = (props) => {
   // console.log(props)
   return (
-    <StyleExperienceContainerDiv>
+    <StyleExperienceContainerDiv id='cv'>
       <div>
         Experience/Education
         <p>Hard to see? <StyledAppLink href={resume} download className={'App-link'} >Download CV here</StyledAppLink></p>
