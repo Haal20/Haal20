@@ -8,7 +8,7 @@ export const GithubCards = (props) => {
   return (
     <StyledContainerDiv id='github'>
         <StyledBoxDiv>
-            My github reops
+            My public github reops
         </StyledBoxDiv>
         <StyledCardContainerDiv>
           {props.gitData?.map(el => {
