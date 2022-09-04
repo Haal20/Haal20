@@ -2,9 +2,9 @@ import './styles/index.css'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { About } from './components/About'
-import { Experience } from './components/Experience'
+import { Cv } from './components/Cv'
 import { Nav } from './components/Nav'
-import { Portfolio } from './components/Portfolio'
+import { GithubCards } from './components/GithubCards'
 import styled from '@emotion/styled'
 import { almaColors } from './styles/SharedStyles'
 import React, {useState, useEffect} from "react";
@@ -26,8 +26,8 @@ export const App = () => {
       <StyledAppHeader>
         <Header/>
         <About />
-        <Portfolio gitData={gitData} />
-        <Experience />
+        <GithubCards gitData={gitData} />
+        <Cv />
         <Nav />
         <Footer />
       </StyledAppHeader>

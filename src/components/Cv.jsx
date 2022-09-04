@@ -3,10 +3,10 @@ import resume from '../assets/almaCV_2022_eng.pdf'
 import { StyledAppLink } from '../styles/SharedStyles'
 import styled from '@emotion/styled'
 import { Document, Page, pdfjs } from 'react-pdf'
-import { almaColors } from './../styles/SharedStyles'
+import { almaColors } from '../styles/SharedStyles'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
-export const Experience = (props) => {
+export const Cv = (props) => {
   // console.log(props)
   return (
     <StyleExperienceContainerDiv>
