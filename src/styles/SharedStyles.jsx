@@ -4,7 +4,7 @@ export const almaColors = {
     yellow: '#ffdb00',
     green: '#0a8a00',
     blue: '#0058a3',
-    blue: '#02427b',
+    blueDark: '#02427b',
     white: '#fff',
     grey100: '#f5f5f5',
     grey200: '#dfdfdf',

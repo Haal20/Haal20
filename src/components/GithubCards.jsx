@@ -30,7 +30,6 @@ const StyledContainerDiv = styled.div`
 `
 const StyledBoxDiv = styled.div`
   text-shadow:  2px 2px 5px ${almaColors.grey500};
-  margin: 0.5em 1em;
   transition: 1s;
   &:hover{
     text-shadow: 2px 2px 5px ${almaColors.black};

@@ -10,7 +10,9 @@ export const Cv = () => {
   return (
     <StyleExperienceContainerDiv id='cv'>
       <div>
-        Experience/Education
+        <StyledBoxDiv>
+          Experience/Education
+        </StyledBoxDiv>
         <p>Hard to see? <StyledAppLink href={resume} download className={'App-link'} >Download CV here</StyledAppLink></p>
         <div>
           <Document
@@ -52,4 +54,12 @@ background-color: ${almaColors.white};
  padding: 0.5em;
  margin: 0.5em 1em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+`
+
+const StyledBoxDiv = styled.div`
+  text-shadow:  2px 2px 5px ${almaColors.grey500};
+  transition: 1s;
+  &:hover{
+    text-shadow: 2px 2px 5px ${almaColors.black};
+  }
 `

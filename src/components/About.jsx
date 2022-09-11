@@ -12,9 +12,9 @@ export const About = () => {
       </StyledAboutBoxDiv>
       <StyledAboutBoxDiv>
         I'm
-        <StyledAlmaDiv>
+        <StyledBoxDiv>
           Alma Härlin
-        </StyledAlmaDiv>
+        </StyledBoxDiv>
         Software Engineer Trainee @IKEA
       </StyledAboutBoxDiv>
     </StyledAboutContainerDiv>
@@ -45,6 +45,10 @@ const StyledAppLogoImg = styled.img`
   }
 `
 
-const StyledAlmaDiv = styled.div`
+const StyledBoxDiv = styled.div`
   text-shadow:  2px 2px 5px ${almaColors.grey500};
+  transition: 1s;
+  &:hover{
+    text-shadow: 2px 2px 5px ${almaColors.black};
+  }
 `
