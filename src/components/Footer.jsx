@@ -4,8 +4,7 @@ import { almaColors, StyledAppLink } from '../styles/SharedStyles'
 import { Contact } from './shared/Contact'
 import { BsArrowUp } from 'react-icons/bs'
 
-export const Footer = (props) => {
-  // console.log(props)
+export const Footer = () => {
   return (
     <StyledFooterContainerDiv>
       <div>
@@ -16,22 +15,23 @@ export const Footer = (props) => {
       <StyleFlippDiv>
         (╯°□°）╯︵ ┻━┻
       </StyleFlippDiv>
-      <div id='footer'>
+      <div>
         Made with ❤️ in SWE © 2022
       </div>
     </StyledFooterContainerDiv>
   )
 }
-
-/* Styles for components */
 const StyledFooterContainerDiv = styled.div`
   border-top: #000000 1px solid;
-  width: 90%;
-  padding: 2em 0em 4em 0em;
+  background-color: ${almaColors.grey100};
+  width: 100%;
+  padding: 1em 0em 0.5em 0em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  position : fixed;
+  bottom : 0;
 `
 const StyleFlippDiv= styled.div`
   text-shadow:  2px 2px 5px ${almaColors.grey500};

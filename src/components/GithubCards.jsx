@@ -2,13 +2,11 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
 
-
 export const GithubCards = (props) => {
-  console.log(props.gitData)
   return (
     <StyledContainerDiv id='github'>
         <StyledBoxDiv>
-            My public github reops
+            My public github repos
         </StyledBoxDiv>
         <StyledCardContainerDiv>
           {props.gitData?.map(el => {
@@ -21,10 +19,8 @@ export const GithubCards = (props) => {
     </StyledContainerDiv>
   )
 }
-
-/* Styles for components */
 const StyledContainerDiv = styled.div`
-  padding: 1em 0em; 
+  padding: 10em 0em; 
   background-color: ${almaColors.white};
   width: 100%;
   display: flex;
@@ -41,6 +37,7 @@ const StyledBoxDiv = styled.div`
   }
 `
 const StyledCardContainerDiv = styled.div`
+  width: 80%;
   margin: 0.5em 1em;
   padding: 0em 1em 0em 1em;
   display: flex;
@@ -53,13 +50,13 @@ const StyledCardLink = styled.a`
   padding: 0em 1em;
   width: 9em;
   height: 5em;
-  background-color: ${almaColors.grey200};
+  background-color: ${almaColors.grey300};
+  text-decoration: underline;
   color: ${almaColors.blue};
   display: flex;
   align-items: center;
   font-size: medium;
   font-weight: bold;
-  
   transition: 0.2s;
   &:hover{
     margin: 1.5em 1.5em 2em 2em;

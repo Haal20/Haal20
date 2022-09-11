@@ -8,3 +8,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  color: #0058a3;
+  text-decoration: none
+}

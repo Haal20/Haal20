@@ -20,7 +20,7 @@ export const almaColors = {
 export const StyledAppLink = styled.a`
     color: ${almaColors.blue};
     transition: 0.5s;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 0.5rem 0.7rem;
     &:hover {
         background-color: #48484866;

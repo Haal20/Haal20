@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
-import { Routes, Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Nav } from '../components/Nav'
 
-export const Header = (props) => {
-  // console.log(props)
+export const Header = () => {
   return (
     <StyledHeaderContainerDiv>
       <Link to="Haal20">
@@ -18,10 +17,11 @@ export const Header = (props) => {
   )
 }
 const StyledHeaderContainerDiv = styled.div`
-  background-color: ${almaColors.white};
+  background-color: ${almaColors.grey100};
+  position: fixed;
   border-bottom: #000000 1px solid;
-  width: 80%;
-  padding: 1em 0em 1em;
+  width: 100%;
+  padding: 0.5em 0em 0.5em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

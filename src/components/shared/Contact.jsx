@@ -2,7 +2,7 @@ import React from 'react'
 import { StyledAppLink } from '../../styles/SharedStyles'
 import { BsLinkedin, BsGithub, BsEnvelopeFill } from 'react-icons/bs'
 
-export const Contact = (props) => {
+export const Contact = () => {
   return (
     <>
       <StyledAppLink

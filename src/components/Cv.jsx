@@ -6,8 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import { almaColors } from '../styles/SharedStyles'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
-export const Cv = (props) => {
-  // console.log(props)
+export const Cv = () => {
   return (
     <StyleExperienceContainerDiv id='cv'>
       <div>
@@ -17,6 +16,7 @@ export const Cv = (props) => {
           <Document
             file={resume}
             onLoadError={console.error}
+            style={{}}
           >
             <StyleCvContainerDiv>
               <StyleCvBoxDiv>
@@ -32,11 +32,9 @@ export const Cv = (props) => {
     </StyleExperienceContainerDiv>
   )
 }
-
-/* Styles for components */
 const StyleExperienceContainerDiv = styled.div`
-  background-color: ${almaColors.grey100};
-  padding: 1em 0em; 
+  background-color: ${almaColors.white};
+  padding: 10em 0em; 
   width: 100%;
   display: flex;
   align-items: center;

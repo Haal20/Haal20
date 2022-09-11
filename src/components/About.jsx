@@ -1,12 +1,10 @@
 import React from 'react'
 import logo from '../assets/angryCat.png'
 import styled from '@emotion/styled'
-import { almaColors, StyledAppLink } from '../styles/SharedStyles';
+import { almaColors } from '../styles/SharedStyles';
 import { Contact } from './shared/Contact';
-import { BsArrowDown } from 'react-icons/bs'
 
-export const About = (props) => {
-  // console.log(props)
+export const About = () => {
   return (
     <StyledAboutContainerDiv>
       <StyledAboutBoxDiv>
@@ -14,24 +12,16 @@ export const About = (props) => {
       </StyledAboutBoxDiv>
       <StyledAboutBoxDiv>
         I'm
-        <div>
+        <StyledAlmaDiv>
           Alma Härlin
-        </div>
+        </StyledAlmaDiv>
         Software Engineer Trainee @IKEA
-        <br />
-        <br />
-        <div>
-          Don't be shy, say hi!
-        </div>
-        <Contact />
       </StyledAboutBoxDiv>
     </StyledAboutContainerDiv>
   )
 }
-
-/* Styles for components */
 const StyledAboutContainerDiv = styled.div`
-  padding: 4em 0em; 
+  padding: 10em 0em; 
   width: 100%;
   display: flex;
   align-items: center;
@@ -40,7 +30,7 @@ const StyledAboutContainerDiv = styled.div`
 `
 const StyledAboutBoxDiv = styled.div`
   text-align: left;
-  margin: 0.5em 3em; 
+  margin: 2em 3em; 
 `
 // TODO: ON HOVER DOES NOT WORK HERE
 const StyledAppLogoImg = styled.img`
@@ -53,4 +43,8 @@ const StyledAppLogoImg = styled.img`
     box-shadow: none;
     margin: 1.5em 1.5em 2em 2em;
   }
+`
+
+const StyledAlmaDiv = styled.div`
+  text-shadow:  2px 2px 5px ${almaColors.grey500};
 `

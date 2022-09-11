@@ -14,8 +14,7 @@ export const ContactMe = () => {
     </StyledContactDiv>
   )
 }
-
 const StyledContactDiv = styled.div`
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 15rem 0rem 5rem 0rem;
     text-align: left;
 `
