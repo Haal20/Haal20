@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Haal20/static/css/main.322f6461.css",
-    "main.js": "/Haal20/static/js/main.9b1ac4b6.js",
+    "main.css": "/Haal20/static/css/main.ae2fab9a.css",
+    "main.js": "/Haal20/static/js/main.b6ae5f4b.js",
     "static/media/angryCat.png": "/Haal20/static/media/angryCat.4dcd19b81c68680eccfc.png",
     "static/media/almaCV_2022_eng.pdf": "/Haal20/static/media/almaCV_2022_eng.86b0a9b4c79d9caa00b6.pdf",
     "index.html": "/Haal20/index.html",
-    "main.322f6461.css.map": "/Haal20/static/css/main.322f6461.css.map",
-    "main.9b1ac4b6.js.map": "/Haal20/static/js/main.9b1ac4b6.js.map"
+    "main.ae2fab9a.css.map": "/Haal20/static/css/main.ae2fab9a.css.map",
+    "main.b6ae5f4b.js.map": "/Haal20/static/js/main.b6ae5f4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.322f6461.css",
-    "static/js/main.9b1ac4b6.js"
+    "static/css/main.ae2fab9a.css",
+    "static/js/main.b6ae5f4b.js"
   ]
 }
