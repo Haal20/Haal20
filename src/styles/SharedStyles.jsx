@@ -26,8 +26,4 @@ export const StyledAppLink = styled.a`
         background-color: #48484866;
         border-radius: 2rem;
     }
-    &:active {
-        background-color: ${almaColors.white};
-        border-radius: 3rem;
-    }
 `

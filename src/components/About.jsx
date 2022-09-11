@@ -14,35 +14,22 @@ export const About = (props) => {
       </StyledAboutBoxDiv>
       <StyledAboutBoxDiv>
         I'm
-        <StyledAlmaDiv>
+        <div>
           Alma Härlin
-        </StyledAlmaDiv>
+        </div>
         Software Engineer Trainee @IKEA
         <br />
         <br />
         <div>
           Don't be shy, say hi!
         </div>
-        <Contact /> || <StyledAppLink href="#footer">
-          down<BsArrowDown/>
-        </StyledAppLink>
+        <Contact />
       </StyledAboutBoxDiv>
     </StyledAboutContainerDiv>
   )
 }
 
 /* Styles for components */
-const StyledAlmaDiv = styled.div`
-  text-shadow:  2px 2px 5px ${almaColors.grey500};
-  justify-content: center;
-  font-size: larger;
-  width: max-content;
-  transition: 1s;
-  &:hover {
-    text-shadow: 2px 2px 5px ${almaColors.black};
-    transform: scale(1.1);
-  }
-`
 const StyledAboutContainerDiv = styled.div`
   padding: 4em 0em; 
   width: 100%;

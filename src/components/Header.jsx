@@ -1,22 +1,22 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { almaColors } from '../styles/SharedStyles'
+import { Routes, Route, Link } from "react-router-dom"
+import { Nav } from '../components/Nav'
 
 export const Header = (props) => {
   // console.log(props)
   return (
     <StyledHeaderContainerDiv>
+      <Link to="Haal20">
+        <StyledHeaderBoxDiv>Hi! Welcome to my site~❤️</StyledHeaderBoxDiv>
+      </Link>
       <div>
-        Hi! Welcome to my site~❤️
+        <Nav />
       </div>
-      <StyleFlippDiv>
-        ┬─┬ ノ( ゜-゜ノ)
-      </StyleFlippDiv>
     </StyledHeaderContainerDiv>
   )
 }
-
-/* Styles for components */
 const StyledHeaderContainerDiv = styled.div`
   background-color: ${almaColors.white};
   border-bottom: #000000 1px solid;
@@ -27,12 +27,8 @@ const StyledHeaderContainerDiv = styled.div`
   align-items: center;
   flex-wrap: wrap;
 `
-const StyleFlippDiv= styled.div`
-  text-shadow:  2px 2px 5px ${almaColors.grey500};
-  margin: 0.5em 1em;
-  transition: 1s;
-  &:hover{
-    text-shadow: 2px 2px 5px ${almaColors.black};
-    transform: scale(1.5);
-  }
+
+const StyledHeaderBoxDiv = styled.div`
+  color: ${almaColors.blue};
+  text-decoration: none;
 `

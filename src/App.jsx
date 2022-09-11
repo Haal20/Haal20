@@ -3,12 +3,13 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { About } from './components/About'
 import { Cv } from './components/Cv'
-import { Nav } from './components/Nav'
 import { GithubCards } from './components/GithubCards'
 import styled from '@emotion/styled'
 import { almaColors } from './styles/SharedStyles'
 import React, {useState, useEffect} from "react";
 import { GETgitData } from './assets/apis/github'
+import { Routes, Route } from "react-router-dom"
+import { ContactMe } from '../src/components/ContactMe';
 
 export const App = () => {
   const [gitData, setGitData] = useState()
@@ -25,11 +26,13 @@ export const App = () => {
   return (
       <StyledAppHeader>
         <Header/>
-        <About />
-        <GithubCards gitData={gitData} />
-        <Cv />
+        <Routes>
+          <Route path="Haal20" element={<About />} />
+          <Route path="github" element={<GithubCards gitData={gitData} />} />
+          <Route path="cv" element={<Cv />} />
+          <Route path="contact" element={<ContactMe />} />
+        </Routes>
         <Footer />
-        <Nav />
       </StyledAppHeader>
   )
 }
@@ -39,7 +42,6 @@ const StyledAppHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(5px + 2vmin);
-  color: ${almaColors.black};   
+  color: ${almaColors.black};
 `

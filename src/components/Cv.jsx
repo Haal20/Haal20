@@ -17,7 +17,6 @@ export const Cv = (props) => {
           <Document
             file={resume}
             onLoadError={console.error}
-            style={{ with: '100vw', height: 'auto'}}
           >
             <StyleCvContainerDiv>
               <StyleCvBoxDiv>

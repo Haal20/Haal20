@@ -8,8 +8,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-.active {
-  background-color: #ffffff66;
-  border-radius: 3rem;
-}

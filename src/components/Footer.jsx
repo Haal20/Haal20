@@ -10,7 +10,7 @@ export const Footer = (props) => {
     <StyledFooterContainerDiv>
       <div>
         <Contact /> || <StyledAppLink href="#">
-          up<BsArrowUp/>
+        <BsArrowUp/>
         </StyledAppLink>
       </div>
       <StyleFlippDiv>
